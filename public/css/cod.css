@@ -1,0 +1,14 @@
+.big-image-COD {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+      url("https://cdn1.dotesports.com/wp-content/uploads/2019/09/18102655/CoD-Mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89.3vh;
+    color: #f1d302;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .overlay-COD h1 {
+    font-size: 60px;
+  }
