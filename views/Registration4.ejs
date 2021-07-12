@@ -1,0 +1,159 @@
+<% layout('layouts/boilerplate')%>
+<div class="container-fluid" style="background-color: black">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          style="height: 100%"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://wallpapercave.com/wp/wp7126557.png"
+                class="d-block w-100 my-5"
+                style="height: 650px"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.xtrafondos.com/wallpapers/vertical/the-phoenix-valorant-5652.jpg"
+                class="d-block w-100"
+                style="height: 650px"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/wallpapersden.com_new-phoenix-valorant-4k-2020_2560x1024.jpg"
+                class="d-block w-100"
+                style="height: 650px"
+                alt="..."
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <form action="/zieus/registration" method="POST" style="color: yellow">
+          <div class="my-5">
+            <label for="inlineFormCustomSelect">Tournament name</label>
+            <select
+              class="custom-select"
+              name="team4[type]"
+              required
+            >
+              <option selected>Choose...</option>
+              <option value="1">Zieus</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number(Whatsapp Number)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="phone"
+              name="team4[phone]"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="team">Team Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="team"
+              name="team4[name]"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="m1name">Member 1 ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="m1name"
+              name="team4[member1]"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="m2name">Member 2 ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="m2name"
+              name="team4[member2]"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="m3name">Member 3 ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="m3name"
+              name="team4[member3]"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="m4name">Member 4 ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="m4name"
+              name="team4[member4]"
+              required
+            />
+          </div>
+
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="Terms"
+              required
+            />
+            <label class="form-check-label" for="Terms"
+              >By ticking you agree to the Terms and Conditions</label
+            >
+          </div>
+          <button type="submit" class="btn btn-registration my-3">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
