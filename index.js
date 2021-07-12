@@ -59,7 +59,10 @@ app.post("/zieus/registration", async (req, res) => {
   await team4.save();
   res.redirect("/thank-you");
 });
-const port = process.env.PORT || 80;
-app.listen(port, () => {
-  console.log(`Server started at port ${port}`);
-});
+
+// const port = process.env.PORT || 80;
+// app.listen(port, () => {
+//   console.log(`Server started at port ${port}`);
+// });
+
+module.exports = app;
