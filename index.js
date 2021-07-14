@@ -1,6 +1,10 @@
+const connectDB = require("./db");
+//connect mongoDB database to the backend server
+connectDB();
+
 const express = require("express");
 
-const connectDB = require("./db");
+
 
 const path = require("path");
 
@@ -10,8 +14,6 @@ const Team4 = require("./model/team4");
 
 const app = express();
 
-//connect mongoDB database to the backend server
-connectDB();
 
 //for reading public folder for html css and js
 app.use(express.static("public"));
